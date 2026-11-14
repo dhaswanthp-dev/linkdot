@@ -1,0 +1,23 @@
+{
+  "name": "linkdot",
+  "private": true,
+  "packageManager": "pnpm@12.14.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.0.0",
+    "turbo": "^2.0.0",
+    "vitest": "5.0.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,yml,yaml}": "prettier --write"
+  }
+}
